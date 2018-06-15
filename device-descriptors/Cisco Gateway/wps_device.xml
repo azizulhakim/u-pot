@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+<specVersion>
+<major>1</major>
+<minor>0</minor>
+</specVersion>
+<device>
+<deviceType>urn:schemas-wifialliance-org:device:WFADevice:1</deviceType>
+<friendlyName>Cisco DPC3939</friendlyName>
+<manufacturer>Cisco Systems, Inc.</manufacturer>
+<manufacturerURL>http://www.cisco.com</manufacturerURL>
+<modelDescription>Cisco DOCSIS Wireless Residential Gateway</modelDescription>
+<modelName>DPC3939</modelName>
+<modelNumber>DPC3939</modelNumber>
+<modelURL>http://www.cisco.com</modelURL>
+<serialNumber>000000001</serialNumber>
+<UDN>uuid:ef36ead5-c347-510c-8ef9-ce866f4fbcd0</UDN>
+<serviceList>
+<service>
+<serviceType>urn:schemas-wifialliance-org:service:WFAWLANConfig:1</serviceType>
+<serviceId>urn:wifialliance-org:serviceId:WFAWLANConfig1</serviceId>
+<SCPDURL>wps_scpd.xml</SCPDURL>
+<controlURL>wps_control</controlURL>
+<eventSubURL>wps_event</eventSubURL>
+</service>
+</serviceList>
+</device>
+</root>

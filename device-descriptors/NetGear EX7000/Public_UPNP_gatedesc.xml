@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+<specVersion>
+<major>1</major>
+<minor>0</minor>
+</specVersion>
+<URLBase>http://10.0.0.218:5000/</URLBase>
+<device>
+http://10.0.0.218:5000/<deviceType>urn:schemas-upnp-org:device:InternetGatewayDevice:1</deviceType>
+<friendlyName>EX7000 (Gateway)</friendlyName>
+<manufacturer>NETGEAR, Inc.</manufacturer>
+<manufacturerURL>http://www.NETGEAR.com</manufacturerURL>
+<modelDescription>NETGEAR EX7000 802.11ac Wireless Router</modelDescription>
+<modelNumber>EX7000</modelNumber>
+<modelName>EX7000</modelName>
+<modelURL>http://www.netgear.com/Products/RoutersandGateways/GWirelessRouters/EX7000.aspx</modelURL>
+<serialNumber>46D57B7AA0F6F</serialNumber>
+<UDN>uuid:9e482dd1-4266-99ce-3f8b-e56546294de1</UDN>
+<iconList>
+<icon>
+<mimetype>image/x-icon</mimetype>
+<width>64</width>
+<height>64</height>
+<depth>32</depth>
+<url>/upnp.gif</url>
+</icon>
+</iconList>
+<serviceList>
+<service>
+<serviceType>urn:schemas-upnp-org:service:Layer3Forwarding:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:L3Forwarding1</serviceId>
+<SCPDURL>/Public_UPNP_Layer3F.xml</SCPDURL>
+<controlURL>/Public_UPNP_C1</controlURL>
+<eventSubURL>/Public_UPNP_Event_1</eventSubURL>
+</service>
+</serviceList>
+<presentationURL>/upnp.gif</presentationURL>
+</device>
+</root>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+<specVersion>
+<major>1</major>
+<minor>0</minor>
+</specVersion>
+<device>
+<deviceType>urn:schemas-upnp-org:device:Basic:1</deviceType>
+<friendlyName>Mega-Pixel Network Camera(192.168.1.249)</friendlyName>
+<manufacturer>VIVOTEK INC.</manufacturer>
+<manufacturerURL>http://www.vivotek.com/</manufacturerURL>
+<modelDescription>H.264 Network Camera</modelDescription>
+<modelName>H.264 Network Camera</modelName>
+<modelNumber>IP8331</modelNumber>
+<UDN>uuid:upnp_H.264 Network Camera-0002D1242D98</UDN>
+<serviceList>
+<service>
+<serviceType>urn:Vivotek:service:BasicService:1</serviceType>
+<serviceId>urn:Vivotek:serviceId:BasicServiceId</serviceId>
+<controlURL>/upnp/control/BasicServiceId</controlURL>
+<eventSubURL>/upnp/event/BasicServiceId</eventSubURL>
+<SCPDURL>/scpd_basic.xml</SCPDURL>
+</service>
+</serviceList>
+<presentationURL>http://192.168.1.249:80/</presentationURL>
+</device>
+</root>

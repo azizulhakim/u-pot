@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0" xmlns:dlna="urn:schemas-dlna-org:device-1-0" xmlns:pnpx="http://schemas.microsoft.com/windows/pnpx/2005/11" xmlns:df="http://schemas.microsoft.com/windows/2008/09/devicefoundation">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <device>
+    <deviceType>urn:schemas-upnp-org:device:MediaRenderer:1</deviceType>
+    <friendlyName>[LG] webOS TV UF7300</friendlyName>
+    <manufacturer>LG Electronics.</manufacturer>
+    <manufacturerURL>http://www.lge.com</manufacturerURL>
+    <modelDescription>LG WebOSTV DMRplus</modelDescription>
+    <modelName>LG TV</modelName>
+    <modelURL></modelURL>
+    <modelNumber>1.0</modelNumber>
+    <serialNumber></serialNumber>
+    <UDN>uuid:12eda913-7a9f-b694-43a0-043a0d5ec7ed</UDN>
+    <pnpx:X_compatibleId>MS_DigitalMediaDeviceClass_DMR_V001</pnpx:X_compatibleId>
+    <pnpx:X_deviceCategory>MediaDevices</pnpx:X_deviceCategory>
+    <df:X_deviceCategory>Multimedia.DMR</df:X_deviceCategory>
+    <df:X_modelId>LG Digital Media Renderer TV</df:X_modelId>
+    <lge:X_LG_DLNA_DOC xmlns:lge="urn:lge-com:device-1-0">1.0</lge:X_LG_DLNA_DOC>
+    <dlna:X_DLNADOC xmlns:dlna="urn:schemas-dlna-org:device-1-0">DMR-1.50</dlna:X_DLNADOC>
+    <iconList>
+      <icon>
+        <mimetype>image/jpeg</mimetype>
+        <width>48</width>
+        <height>48</height>
+        <depth>24</depth>
+        <url>/dmrIcon_48.jpeg</url>
+      </icon>
+      <icon>
+        <mimetype>image/jpeg</mimetype>
+        <width>120</width>
+        <height>120</height>
+        <depth>24</depth>
+        <url>/dmrIcon_120.jpeg</url>
+      </icon>
+      <icon>
+        <mimetype>image/png</mimetype>
+        <width>48</width>
+        <height>48</height>
+        <depth>24</depth>
+        <url>/dmrIcon_48.png</url>
+      </icon>
+      <icon>
+        <mimetype>image/png</mimetype>
+        <width>120</width>
+        <height>120</height>
+        <depth>8</depth>
+        <url>/dmrIcon_120.png</url>
+      </icon>
+    </iconList>
+    <serviceList>
+      <service>
+        <serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+        <serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>
+        <SCPDURL>/AVTransport/12eda913-7a9f-b694-43a0-043a0d5ec7ed/scpd.xml</SCPDURL>
+        <controlURL>/AVTransport/12eda913-7a9f-b694-43a0-043a0d5ec7ed/control.xml</controlURL>
+        <eventSubURL>/AVTransport/12eda913-7a9f-b694-43a0-043a0d5ec7ed/event.xml</eventSubURL>
+      </service>
+      <service>
+        <serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+        <serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+        <SCPDURL>/ConnectionManager/12eda913-7a9f-b694-43a0-043a0d5ec7ed/scpd.xml</SCPDURL>
+        <controlURL>/ConnectionManager/12eda913-7a9f-b694-43a0-043a0d5ec7ed/control.xml</controlURL>
+        <eventSubURL>/ConnectionManager/12eda913-7a9f-b694-43a0-043a0d5ec7ed/event.xml</eventSubURL>
+      </service>
+      <service>
+        <serviceType>urn:schemas-upnp-org:service:RenderingControl:1</serviceType>
+        <serviceId>urn:upnp-org:serviceId:RenderingControl</serviceId>
+        <SCPDURL>/RenderingControl/12eda913-7a9f-b694-43a0-043a0d5ec7ed/scpd.xml</SCPDURL>
+        <controlURL>/RenderingControl/12eda913-7a9f-b694-43a0-043a0d5ec7ed/control.xml</controlURL>
+        <eventSubURL>/RenderingControl/12eda913-7a9f-b694-43a0-043a0d5ec7ed/event.xml</eventSubURL>
+      </service>
+    </serviceList>
+  </device>
+</root>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+<specVersion><major>1</major><minor>0</minor></specVersion>
+<actionList>
+<action>
+<name>GetDeviceInfo</name>
+<argumentList>
+<argument>
+<name>NewDeviceInfo</name>
+<direction>out</direction>
+<relatedStateVariable>DeviceInfo</relatedStateVariable>
+</argument>
+</argumentList>
+</action>
+<action>
+<name>PutMessage</name>
+<argumentList>
+<argument>
+<name>NewInMessage</name>
+<direction>in</direction>
+<relatedStateVariable>InMessage</relatedStateVariable>
+</argument>
+<argument>
+<name>NewOutMessage</name>
+<direction>out</direction>
+<relatedStateVariable>OutMessage</relatedStateVariable>
+</argument>
+</argumentList>
+</action>
+<action>
+<name>PutWLANResponse</name>
+<argumentList>
+<argument>
+<name>NewMessage</name>
+<direction>in</direction>
+<relatedStateVariable>Message</relatedStateVariable>
+</argument>
+<argument>
+<name>NewWLANEventType</name>
+<direction>in</direction>
+<relatedStateVariable>WLANEventType</relatedStateVariable>
+</argument>
+<argument>
+<name>NewWLANEventMAC</name>
+<direction>in</direction>
+<relatedStateVariable>WLANEventMAC</relatedStateVariable>
+</argument>
+</argumentList>
+</action>
+<action>
+<name>SetSelectedRegistrar</name>
+<argumentList>
+<argument>
+<name>NewMessage</name>
+<direction>in</direction>
+<relatedStateVariable>Message</relatedStateVariable>
+</argument>
+</argumentList>
+</action>
+</actionList>
+<serviceStateTable>
+<stateVariable sendEvents="no">
+<name>Message</name>
+<dataType>bin.base64</dataType>
+</stateVariable>
+<stateVariable sendEvents="no">
+<name>InMessage</name>
+<dataType>bin.base64</dataType>
+</stateVariable>
+<stateVariable sendEvents="no">
+<name>OutMessage</name>
+<dataType>bin.base64</dataType>
+</stateVariable>
+<stateVariable sendEvents="no">
+<name>DeviceInfo</name>
+<dataType>bin.base64</dataType>
+</stateVariable>
+<stateVariable sendEvents="yes">
+<name>APStatus</name>
+<dataType>ui1</dataType>
+</stateVariable>
+<stateVariable sendEvents="yes">
+<name>STAStatus</name>
+<dataType>ui1</dataType>
+</stateVariable>
+<stateVariable sendEvents="yes">
+<name>WLANEvent</name>
+<dataType>bin.base64</dataType>
+</stateVariable>
+<stateVariable sendEvents="no">
+<name>WLANEventType</name>
+<dataType>ui1</dataType>
+</stateVariable>
+<stateVariable sendEvents="no">
+<name>WLANEventMAC</name>
+<dataType>string</dataType>
+</stateVariable>
+<stateVariable sendEvents="no">
+<name>WLANResponse</name>
+<dataType>bin.base64</dataType>
+</stateVariable>
+</serviceStateTable>
+</scpd>

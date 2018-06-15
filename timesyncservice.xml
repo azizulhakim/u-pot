@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scpd xmlns="urn:Belkin:service-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  
+  <actionList>  
+    <action>    
+      <name>TimeSync</name>    
+      <argumentList>
+         <argument>
+           <retval/>
+		   <!-- UTC value, long -->
+           <name>UTC</name>
+           <relatedStateVariable>UTC</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+         <argument>
+           <retval/>
+           <name>TimeZone</name>
+           <relatedStateVariable>TimeZone</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+         <argument>
+           <retval/>
+           <name>dst</name>
+           <relatedStateVariable>dst</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+		  <argument>
+           <retval/>
+           <name>DstSupported</name>
+           <relatedStateVariable>DstSupported</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+      </argumentList>      
+    </action>
+	
+    <action>
+      <name>GetTime</name> 
+    </action>
+    
+</actionList>
+
+  <serviceStateTable>
+    
+        <stateVariable sendEvents="no">
+        <!-- UTC seconds-->
+      <name>UTC</name>
+      <dataType>long</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    
+    
+    <stateVariable sendEvents="no">
+      <name>TimeZone</name>
+      <dataType>int</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+	
+	<stateVariable sendEvents="no">
+      <name>dst</name>
+      <dataType>Boolean</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    
+  </serviceStateTable>
+  
+  </scpd>

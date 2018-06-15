@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scpd xmlns="urn:Belkin:service-1-0">
+
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  
+<actionList>
+    <action>
+          <name>UpdateWeeklyCalendar</name>   
+		  <argumentList>
+	        <argument>
+                <retval/>
+<!-- entire day's timers list: 
+NumberOfTimers|time,action,[deviceUDN;deviceUDN;...]|time,action,[deviceUDN;deviceUDN...]|time,action 
+ -->				
+<!--time, seconds from 00:00 am within 24 hours. action: 0x00 (OFF/NO detection), 0x01: (ON/Detection)--> 
+<!--PLEASE note that, for simpler timer stored on socket, deviceUDN is NULL-->
+                <name>Mon</name>
+                <relatedStateVariable>Mon</relatedStateVariable>
+                <direction>in</direction>
+            </argument>
+	        <argument>
+                <retval/>
+                <name>Tues</name>
+                <relatedStateVariable>Tues</relatedStateVariable>
+                <direction>in</direction>
+            </argument>
+	        <argument>
+                <retval/>
+                <name>Wed</name>
+                <relatedStateVariable>Wed</relatedStateVariable>
+                <direction>in</direction>
+            </argument>
+	        <argument>
+                <retval/>
+                <name>Thurs</name>
+                <relatedStateVariable>Thurs</relatedStateVariable>
+                <direction>in</direction>
+            </argument>
+	        <argument>
+                <retval/>
+                <name>Fri</name>
+                <relatedStateVariable>Fri</relatedStateVariable>
+                <direction>in</direction>
+            </argument>
+	        <argument>
+                <retval/>
+                <name>Sat</name>
+                <relatedStateVariable>Sat</relatedStateVariable>
+                <direction>in</direction>
+            </argument>
+	        <argument>
+                <retval/>
+                <name>Sun</name>
+                <relatedStateVariable>Sun</relatedStateVariable>
+                <direction>in</direction>
+            </argument>
+
+          </argumentList>
+    </action>
+
+    <action>
+          <name>EditWeeklycalendar</name>    
+          <argumentList>
+           <argument>
+                <retval/>
+<!-- 0x00: disbale; 0x01: enable; 0x02: remove-->
+<!--- Disable will disable entire week schedule, now only remove will be applied 
+since app will manage all rules and store on device on other way 
+-->
+                <name>action</name>
+                <relatedStateVariable>action</relatedStateVariable>
+                <direction>in</direction>
+          </argument>
+          </argumentList>
+    </action>
+
+    
+    <!--Should create detailed low level protocol-->
+    <action>
+          <name>GetRulesDBPath</name>    
+          <argumentList>
+	  <argument>
+           <retval/>
+           <name>RulesDBPath</name>
+           <relatedStateVariable>RulesDBPath</relatedStateVariable>
+           <direction>out</direction>
+          </argument>
+          </argumentList>
+    </action>
+
+<action>
+ <name>SetRulesDBVersion</name>    
+          <argumentList>
+	  <argument>
+           <retval/>
+           <name>RulesDBVersion</name>
+           <relatedStateVariable>RulesDBVersion</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+          </argumentList>
+    </action>
+
+<action>
+	  <name>GetRulesDBVersion</name>    
+	  <argumentList>
+	  <argument>
+           <retval/>
+           <name>RulesDBVersion</name>
+           <relatedStateVariable>RulesDBVersion</relatedStateVariable>
+           <direction>out</direction>
+          </argument>
+          </argumentList>
+    </action>
+<action>
+  <name>SetRuleID</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>RuleID</name>
+       <relatedStateVariable>RuleID</relatedStateVariable>
+       <direction>in</direction>
+      </argument>
+     <argument>
+       <retval/>
+       <name>RuleMsg</name>
+       <relatedStateVariable>RuleMsg</relatedStateVariable>
+       <direction>in</direction>
+      </argument>
+     <argument>
+       <retval/>
+       <name>RuleFreq</name>
+       <relatedStateVariable>RuleFreq</relatedStateVariable>
+       <direction>in</direction>
+      </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>DeleteRuleID</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>RuleID</name>
+       <relatedStateVariable>RuleID</relatedStateVariable>
+       <direction>in</direction>
+      </argument>
+  </argumentList>
+</action>
+	
+<action>
+  <name>SimulatedRuleData</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>DeviceList</name>
+       <relatedStateVariable>DeviceList</relatedStateVariable>
+       <direction>in</direction>
+      </argument>
+     <argument>
+       <retval/>
+       <name>DeviceCount</name>
+       <relatedStateVariable>DeviceCount</relatedStateVariable>
+       <direction>in</direction>
+      </argument>
+  </argumentList>
+</action>
+
+<!-- ** BEGIN ** Optimize Rules API: XML Schema -->
+<action>
+  <name>FetchRules</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>ruleDbPath</name>
+       <relatedStateVariable>ruleDbPath</relatedStateVariable>
+       <direction>out</direction>
+     </argument>
+     <argument>
+       <retval/>
+       <name>ruleDbVersion</name>
+       <relatedStateVariable>ruleDbVersion</relatedStateVariable>
+       <direction>out</direction>
+     </argument>
+     <argument>
+       <retval/>
+       <name>errorInfo</name>
+       <relatedStateVariable>errorInfo</relatedStateVariable>
+       <direction>out</direction>
+     </argument>
+  </argumentList>	 
+</action>
+
+<action>
+  <name>StoreRules</name>
+  <argumentList>
+     <argument>
+	   <retval/>
+       <name>ruleDbVersion</name>
+       <relatedStateVariable>ruleDbVersion</relatedStateVariable>
+       <direction>in</direction>
+     </argument>
+     <argument>
+	   <retval/>
+       <name>processDb</name>
+       <relatedStateVariable>processDb</relatedStateVariable>
+       <direction>in</direction>
+     </argument>
+     <argument>
+	   <retval/>
+       <name>ruleDbBody</name>
+       <relatedStateVariable>ruleDbBody</relatedStateVariable>
+       <direction>in</direction>
+     </argument>
+     <argument>
+	   <retval/>
+       <name>errorInfo</name>
+       <relatedStateVariable>errorInfo</relatedStateVariable>
+       <direction>out</direction>
+     </argument>
+  </argumentList>	 
+</action>
+<!-- ** END ** Optimize Rules API: XML Schema -->
+</actionList>
+
+  <serviceStateTable>
+  
+  <!-- connected, connecting, disconnected, time out error -->
+  <stateVariable sendEvents="no">
+      <name>RulesDBPath</name>
+      <dataType>string</dataType>
+      <defaultValue>/rules.db</defaultValue>
+    </stateVariable>
+	
+	  <stateVariable sendEvents="no">
+      <name>RulesDBVersion</name>
+      <dataType>string</dataType>
+      <defaultValue/>
+    </stateVariable>
+	
+  <stateVariable sendEvents="no">	
+	<name>Mon</name>
+      <dataType>string</dataType>
+      <defaultValue/>
+    </stateVariable>
+    
+  <stateVariable sendEvents="no">	
+	<name>Tues</name>
+      <dataType>string</dataType>
+      <defaultValue/>
+    </stateVariable>
+    
+    <stateVariable sendEvents="no">
+      <name>Wed</name>
+      <dataType>string</dataType>
+      <defaultValue/>
+    </stateVariable>
+	
+	<stateVariable sendEvents="no">
+      <name>Thurs</name>
+      <dataType>Thurs</dataType>
+      <defaultValue/>
+    </stateVariable>
+	
+	<stateVariable sendEvents="no">
+      <name>Fri</name>
+      <dataType>Fri</dataType>
+      <defaultValue/>
+    </stateVariable>	
+
+	<stateVariable sendEvents="no">
+      <name>Sat</name>
+      <dataType>Sat</dataType>
+      <defaultValue/>
+    </stateVariable>
+	
+	<stateVariable sendEvents="no">
+      <name>Sun</name>
+      <dataType>Sun</dataType>
+      <defaultValue/>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>RuleID</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>RuleMsg</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>RuleFreq</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>DeviceList</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>DeviceCount</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+	
+	<!-- ** BEGIN ** Optimize Rules API -->
+    <stateVariable sendEvents="no">
+      <name>ruleDbPath</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+
+    <stateVariable sendEvents="no">
+      <name>ruleDbVersion</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>processDb</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>ruleDbBody</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>errorInfo</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+	<!-- ** END ** Optimize Rules API -->
+	
+	</serviceStateTable>
+  
+  </scpd>

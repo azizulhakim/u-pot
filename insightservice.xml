@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scpd xmlns="urn:Belkin:service-1-0">
+
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  
+  <actionList>
+
+<action>
+  <name>GetPower</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>InstantPower</name>
+       <relatedStateVariable>InstantPower</relatedStateVariable>
+       <direction>out</direction>
+      </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>GetTodayKWH</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>TodayKWH</name>
+       <relatedStateVariable>TodayKWH</relatedStateVariable>
+       <direction>out</direction>
+      </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>SetAutoPowerThreshold</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>PowerThreshold</name>
+       <relatedStateVariable>PowerThreshold</relatedStateVariable>
+       <direction>in</direction>
+      </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>GetPowerThreshold</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>PowerThreshold</name>
+       <relatedStateVariable>PowerThreshold</relatedStateVariable>
+       <direction>out</direction>
+      </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>SetPowerThreshold</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>PowerThreshold</name>
+       <relatedStateVariable>PowerThreshold</relatedStateVariable>
+       <direction>in</direction>
+      </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>ResetPowerThreshold</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>PowerThreshold</name>
+       <relatedStateVariable>PowerThreshold</relatedStateVariable>
+       <direction>in</direction>
+      </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>GetInsightInfo</name>
+  <argumentList>
+  <argument>
+  <retval/>
+  <name>InsightInfo</name>
+  <relatedStateVariable>InsightInfo</relatedStateVariable>
+  <direction>out</direction>
+  </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>GetInsightParams</name>
+  <argumentList>
+  <argument>
+  <retval/>
+  <name>InsightParams</name>
+  <relatedStateVariable>InsightParams</relatedStateVariable>
+  <direction>out</direction>
+  </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>GetONFor</name>
+  <argumentList>
+  <argument>
+  <retval/>
+  <name>ONFor</name>
+  <relatedStateVariable>ONFor</relatedStateVariable>
+  <direction>out</direction>
+  </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>GetInSBYSince</name>
+  <argumentList>
+  <argument>
+  <retval/>
+  <name>InSBYSince</name>
+  <relatedStateVariable>InSBYSince</relatedStateVariable>
+  <direction>out</direction>
+   </argument>
+   </argumentList>
+</action>
+
+
+<action>
+  <name>GetTodayONTime</name>
+  <argumentList>
+  <argument>
+  <retval/>
+  <name>TodayONTime</name>
+  <relatedStateVariable>TodayONTime</relatedStateVariable>
+  <direction>out</direction>
+   </argument>
+   </argumentList>
+</action>
+
+
+<action>
+  <name>GetTodaySBYTime</name>
+  <argumentList>
+  <argument>
+  <retval/>
+  <name>TodaySBYTime</name>
+  <relatedStateVariable>TodaySBYTime</relatedStateVariable>
+  <direction>out</direction>
+   </argument>
+   </argumentList>
+</action>
+  
+<action>
+  <name>ScheduleDataExport</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>EmailAddress</name>
+       <relatedStateVariable>EmailAddress</relatedStateVariable>
+       <direction>in</direction>
+     </argument>
+     <argument>
+       <retval/>
+       <name>DataExportType</name>
+       <relatedStateVariable>DataExportType</relatedStateVariable>
+       <direction>in</direction>
+     </argument>
+  </argumentList>
+</action>
+
+<action>
+  <name>GetDataExportInfo</name>
+  <argumentList>
+     <argument>
+       <retval/>
+       <name>LastDataExportTS</name>
+       <relatedStateVariable>LastDataExportTS</relatedStateVariable>
+       <direction>out</direction>
+     </argument>
+     <argument>
+       <retval/>
+       <name>DataExportType</name>
+       <relatedStateVariable>DataExportType</relatedStateVariable>
+       <direction>out</direction>
+     </argument>
+     <argument>
+       <retval/>
+       <name>EmailAddress</name>
+       <relatedStateVariable>EmailAddress</relatedStateVariable>
+       <direction>out</direction>
+     </argument>
+  </argumentList>
+</action>
+
+</actionList>
+  
+
+  <serviceStateTable>
+  
+    <stateVariable sendEvents="yes">
+      <name>InstantPower</name>
+      <dataType>String</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>TodayKWH</name>
+      <dataType>String</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>InsightInfo</name>
+      <dataType>String</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>InsightParams</name>
+      <dataType>String</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>TodayONTime</name>
+      <dataType>String</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>InSBYSince</name>
+      <dataType>String</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>ONFor</name>
+      <dataType>String</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>TodaySBYTime</name>
+      <dataType>String</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>PowerThreshold</name>
+      <dataType>String</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>EmailAddress</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>DataExportType</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>LastDataExportTS</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+
+  </serviceStateTable>
+  
+  </scpd>

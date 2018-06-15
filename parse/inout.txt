@@ -1,0 +1,340 @@
+urn:Belkin:service:basicevent:1
+{'SetBinaryState': [{'name': 'BinaryState', 'relatedStateVariable': 'binarystate', 'direction': 'in'}, {'name': 'Duration', 'relatedStateVariable': 'duration', 'direction': 'in'}, {'name': 'EndAction', 'relatedStateVariable': 'endaction', 'direction': 'in'}, {'name': 'UDN', 'relatedStateVariable': 'udn', 'direction': 'in'}, {'name': 'CountdownEndTime', 'relatedStateVariable': 'countdownendtime', 'direction': 'out'}, {'name': 'deviceCurrentTime', 'relatedStateVariable': 'devicecurrenttime', 'direction': 'out'}], 'UpdateInsightHomeSettings': [{'name': 'EnergyPerUnitCost', 'relatedStateVariable': 'energyperunitcost', 'direction': 'in'}, {'name': 'Currency', 'relatedStateVariable': 'currency', 'direction': 'in'}, {'name': 'EnergyPerUnitCostVersion', 'relatedStateVariable': 'energyperunitcostversion', 'direction': 'in'}], 'SetInsightHomeSettings': [{'name': 'EnergyPerUnitCost', 'relatedStateVariable': 'energyperunitcost', 'direction': 'in'}, {'name': 'Currency', 'relatedStateVariable': 'currency', 'direction': 'in'}], 'GetInsightHomeSettings': [{'name': 'HomeSettingsVersion', 'relatedStateVariable': 'homesettingsversion', 'direction': 'out'}, {'name': 'EnergyPerUnitCost', 'relatedStateVariable': 'energyperunitcost', 'direction': 'out'}, {'name': 'Currency', 'relatedStateVariable': 'currency', 'direction': 'out'}], 'SetLogLevelOption': [{'name': 'Level', 'relatedStateVariable': 'level', 'direction': 'in'}, {'name': 'Option', 'relatedStateVariable': 'option', 'direction': 'in'}], 'GetFriendlyName': [{'name': 'FriendlyName', 'relatedStateVariable': 'friendlyname', 'direction': 'in'}], 'ReSetup': [{'name': 'Reset', 'relatedStateVariable': 'reset', 'direction': 'in'}], 'SetHomeId': [{'name': 'HomeId', 'relatedStateVariable': 'homeid', 'direction': 'in'}], 'GetHomeInfo': [{'name': 'GetHomeInfo', 'relatedStateVariable': 'homeinfo', 'direction': 'out'}], 'SetDeviceId': [{'name': 'SetDeviceId', 'relatedStateVariable': 'deviceid', 'direction': 'in'}], 'ShareHWInfo': [{'name': 'Mac', 'relatedStateVariable': 'mac', 'direction': 'in'}, {'name': 'Serial', 'relatedStateVariable': 'serial', 'direction': 'in'}, {'name': 'Udn', 'relatedStateVariable': 'udn', 'direction': 'in'}, {'name': 'RestoreState', 'relatedStateVariable': 'restorestate', 'direction': 'in'}, {'name': 'HomeId', 'relatedStateVariable': 'homeid', 'direction': 'in'}, {'name': 'PluginKey', 'relatedStateVariable': 'pluginkey', 'direction': 'in'}], 'ChangeFriendlyName': [{'name': 'FriendlyName', 'relatedStateVariable': 'friendlyname', 'direction': 'in'}], 'SetSmartDevInfo': [{'name': 'SmartDevURL', 'relatedStateVariable': 'smartdevurl', 'direction': 'in'}], 'GetRuleOverrideStatus': [{'name': 'RuleOverrideStatus', 'relatedStateVariable': 'ruleoverridestatus', 'direction': 'in'}], 'GetDeviceIcon': [{'name': 'DeviceIcon', 'relatedStateVariable': 'deviceicon', 'direction': 'in'}], 'GetIconURL': [{'name': 'URL', 'relatedStateVariable': 'url', 'direction': 'out'}], 'GetLogFileURL': [{'name': 'LOGURL', 'relatedStateVariable': 'logurl', 'direction': 'out'}], 'ChangeDeviceIcon': [{'name': 'PictureSize', 'relatedStateVariable': 'picturesize', 'direction': 'in'}, {'name': 'PictureHeight', 'relatedStateVariable': 'picturewidth', 'direction': 'in'}, {'name': 'PictureColorDeep', 'relatedStateVariable': 'picturecolordeep', 'direction': 'in'}], 'GetBinaryState': [{'name': 'BinaryState', 'relatedStateVariable': 'binarystate', 'direction': 'out'}], 'SetMultiState': [{'name': 'state', 'relatedStateVariable': 'statelist', 'direction': 'in'}, {'name': 'state', 'relatedStateVariable': 'statelist', 'direction': 'in'}, {'name': 'state', 'relatedStateVariable': 'statelist', 'direction': 'in'}], 'SetCrockpotState': [{'name': 'mode', 'relatedStateVariable': 'mode', 'direction': 'in'}, {'name': 'time', 'relatedStateVariable': 'timevariable', 'direction': 'in'}], 'GetCrockpotState': [{'name': 'mode', 'relatedStateVariable': 'mode', 'direction': 'out'}, {'name': 'time', 'relatedStateVariable': 'timevariable', 'direction': 'out'}], 'GetWatchdogFile': [{'name': 'WDFile', 'relatedStateVariable': 'wdfile', 'direction': 'out'}], 'GetSignalStrength': [{'name': 'SignalStrength', 'relatedStateVariable': 'signalstrength', 'direction': 'in'}], 'SetServerEnvironment': [{'name': 'ServerEnvironment', 'relatedStateVariable': 'serverenvironment', 'direction': 'in'}, {'name': 'TurnServerEnvironment', 'relatedStateVariable': 'turnserverenvironment', 'direction': 'in'}, {'name': 'ServerEnvironmentType', 'relatedStateVariable': 'serverenvironmenttype', 'direction': 'in'}], 'GetServerEnvironment': [{'name': 'ServerEnvironment', 'relatedStateVariable': 'serverenvironment', 'direction': 'out'}, {'name': 'TurnServerEnvironment', 'relatedStateVariable': 'turnserverenvironment', 'direction': 'out'}, {'name': 'ServerEnvironmentType', 'relatedStateVariable': 'serverenvironmenttype', 'direction': 'out'}], 'GetIconVersion': [{'name': 'IconVersion', 'relatedStateVariable': 'iconversion', 'direction': 'out'}], 'GetSimulatedRuleData': [{'name': 'GetSimulatedRuleData', 'relatedStateVariable': 'ruledata', 'direction': 'out'}], 'NotifyManualToggle': [{'name': 'NotifyManualToggle', 'relatedStateVariable': 'manualtoggle', 'direction': 'out'}], 'ControlCloudUpload': [{'name': 'EnableUpload', 'relatedStateVariable': 'enableupload', 'direction': 'in'}]}
+{'homesettingsversion': '2', 'energyperunitcost': '111', 'currency': '1', 'binarystate': '8', 'duration': '0', 'endaction': '0', 'udn': '0', 'mode': '0', 'time': '0', 'level': '0', 'option': '0', 'reset': '0', 'friendlyname': 'WeMo Insight', 'homeid': '7444278', 'deviceid': '5b9820b368ef79fd', 'smartdevinfo': 'http://10.0.0.158:49154/smartDev.txt', 'macaddr': '149182B3A4D0', 'serialno': '231624K120011C', 'pluginudn': 'uuid:Insight-1_0-231624K120011C', 'deviceicon': '0', 'statelist': '0', 'url': 'http://10.0.0.158:49154/icon.jpg', 'ruleoverridestatus': '0', 'wdfile': 'Sending', 'signalstrength': '68', 'serverenvironment': '', 'turnserverenvironment': '', 'serverenvironmenttype': '0', 'iconversion': '1', 'ruledata': '-1|8|0|uuid:Insight-1_0-231624K120011C', 'manualtoggle': '0', 'enableupload': '0', 'countdownendtime': '0', 'devicecurrenttime': '0', 'homeinfo': '0|7444278|g80ZUgABva3ZxTpthEQcHiDwPur5VyBGVQ+NZY/VoZs0pNrZ+EiSv4WpVJavAT2y\niJorIj60M4iofpkCB7YzSg==\n|', 'logurl': 'http://10.0.0.158:49154/PluginLogs.txt'}
+G_MODULE_EXPORT void SetBinaryState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void UpdateInsightHomeSettings_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void SetInsightHomeSettings_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetInsightHomeSettings_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void SetLogLevelOption_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetFriendlyName_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void ReSetup_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void SetHomeId_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetHomeId_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetHomeInfo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void SetDeviceId_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetDeviceId_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetMacAddr_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetSerialNo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetPluginUDN_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetSmartDevInfo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void ShareHWInfo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void ChangeFriendlyName_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void SetSmartDevInfo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetRuleOverrideStatus_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetDeviceIcon_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetIconURL_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetLogFileURL_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void ChangeDeviceIcon_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetBinaryState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void SetMultiState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void SetCrockpotState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetCrockpotState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetWatchdogFile_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetSignalStrength_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void SetServerEnvironment_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetServerEnvironment_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetIconVersion_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void GetSimulatedRuleData_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void NotifyManualToggle_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void ControlCloudUpload_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);
+G_MODULE_EXPORT void SetBinaryState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("SetBinaryState_cb received");
+gupnp_service_action_get (action, "BinaryState", G_TYPE_STRING, binarystate, NULL);
+gupnp_service_action_get (action, "Duration", G_TYPE_STRING, duration, NULL);
+gupnp_service_action_get (action, "EndAction", G_TYPE_STRING, endaction, NULL);
+gupnp_service_action_get (action, "UDN", G_TYPE_STRING, udn, NULL);
+gupnp_service_action_set (action, "CountdownEndTime", G_TYPE_STRING, "0", NULL);
+gupnp_service_action_set (action, "deviceCurrentTime", G_TYPE_STRING, "0", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void UpdateInsightHomeSettings_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("UpdateInsightHomeSettings_cb received");
+gupnp_service_action_get (action, "EnergyPerUnitCost", G_TYPE_STRING, energyperunitcost, NULL);
+gupnp_service_action_get (action, "Currency", G_TYPE_STRING, currency, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void SetInsightHomeSettings_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("SetInsightHomeSettings_cb received");
+gupnp_service_action_get (action, "EnergyPerUnitCost", G_TYPE_STRING, energyperunitcost, NULL);
+gupnp_service_action_get (action, "Currency", G_TYPE_STRING, currency, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetInsightHomeSettings_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetInsightHomeSettings_cb received");
+gupnp_service_action_set (action, "HomeSettingsVersion", G_TYPE_STRING, "2", NULL);
+gupnp_service_action_set (action, "EnergyPerUnitCost", G_TYPE_STRING, "111", NULL);
+gupnp_service_action_set (action, "Currency", G_TYPE_STRING, "1", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void SetLogLevelOption_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("SetLogLevelOption_cb received");
+gupnp_service_action_get (action, "Level", G_TYPE_STRING, level, NULL);
+gupnp_service_action_get (action, "Option", G_TYPE_STRING, option, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetFriendlyName_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetFriendlyName_cb received");
+gupnp_service_action_get (action, "FriendlyName", G_TYPE_STRING, friendlyname, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void ReSetup_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("ReSetup_cb received");
+gupnp_service_action_get (action, "Reset", G_TYPE_STRING, reset, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void SetHomeId_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("SetHomeId_cb received");
+gupnp_service_action_get (action, "HomeId", G_TYPE_STRING, homeid, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetHomeId_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetHomeId_cb received");
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetHomeInfo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetHomeInfo_cb received");
+gupnp_service_action_set (action, "GetHomeInfo", G_TYPE_STRING, "0|7444278|g80ZUgABva3ZxTpthEQcHiDwPur5VyBGVQ+NZY/VoZs0pNrZ+EiSv4WpVJavAT2y
+iJorIj60M4iofpkCB7YzSg==
+|", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void SetDeviceId_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("SetDeviceId_cb received");
+gupnp_service_action_get (action, "SetDeviceId", G_TYPE_STRING, deviceid, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetDeviceId_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetDeviceId_cb received");
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetMacAddr_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetMacAddr_cb received");
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetSerialNo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetSerialNo_cb received");
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetPluginUDN_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetPluginUDN_cb received");
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetSmartDevInfo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetSmartDevInfo_cb received");
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void ShareHWInfo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("ShareHWInfo_cb received");
+gupnp_service_action_get (action, "Udn", G_TYPE_STRING, udn, NULL);
+gupnp_service_action_get (action, "HomeId", G_TYPE_STRING, homeid, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void ChangeFriendlyName_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("ChangeFriendlyName_cb received");
+gupnp_service_action_get (action, "FriendlyName", G_TYPE_STRING, friendlyname, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void SetSmartDevInfo_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("SetSmartDevInfo_cb received");
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetRuleOverrideStatus_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetRuleOverrideStatus_cb received");
+gupnp_service_action_get (action, "RuleOverrideStatus", G_TYPE_STRING, ruleoverridestatus, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetDeviceIcon_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetDeviceIcon_cb received");
+gupnp_service_action_get (action, "DeviceIcon", G_TYPE_STRING, deviceicon, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetIconURL_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetIconURL_cb received");
+gupnp_service_action_set (action, "URL", G_TYPE_STRING, "http://10.0.0.158:49154/icon.jpg", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetLogFileURL_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetLogFileURL_cb received");
+gupnp_service_action_set (action, "LOGURL", G_TYPE_STRING, "http://10.0.0.158:49154/PluginLogs.txt", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void ChangeDeviceIcon_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("ChangeDeviceIcon_cb received");
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetBinaryState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetBinaryState_cb received");
+gupnp_service_action_set (action, "BinaryState", G_TYPE_STRING, "8", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void SetMultiState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("SetMultiState_cb received");
+gupnp_service_action_get (action, "state", G_TYPE_STRING, statelist, NULL);
+gupnp_service_action_get (action, "state", G_TYPE_STRING, statelist, NULL);
+gupnp_service_action_get (action, "state", G_TYPE_STRING, statelist, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void SetCrockpotState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("SetCrockpotState_cb received");
+gupnp_service_action_get (action, "mode", G_TYPE_STRING, mode, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetCrockpotState_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetCrockpotState_cb received");
+gupnp_service_action_set (action, "mode", G_TYPE_STRING, "0", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetWatchdogFile_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetWatchdogFile_cb received");
+gupnp_service_action_set (action, "WDFile", G_TYPE_STRING, "Sending", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetSignalStrength_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetSignalStrength_cb received");
+gupnp_service_action_get (action, "SignalStrength", G_TYPE_STRING, signalstrength, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void SetServerEnvironment_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("SetServerEnvironment_cb received");
+gupnp_service_action_get (action, "ServerEnvironment", G_TYPE_STRING, serverenvironment, NULL);
+gupnp_service_action_get (action, "TurnServerEnvironment", G_TYPE_STRING, turnserverenvironment, NULL);
+gupnp_service_action_get (action, "ServerEnvironmentType", G_TYPE_STRING, serverenvironmenttype, NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetServerEnvironment_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetServerEnvironment_cb received");
+gupnp_service_action_set (action, "ServerEnvironment", G_TYPE_STRING, "", NULL);
+gupnp_service_action_set (action, "TurnServerEnvironment", G_TYPE_STRING, "", NULL);
+gupnp_service_action_set (action, "ServerEnvironmentType", G_TYPE_STRING, "0", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetIconVersion_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetIconVersion_cb received");
+gupnp_service_action_set (action, "IconVersion", G_TYPE_STRING, "1", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void GetSimulatedRuleData_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("GetSimulatedRuleData_cb received");
+gupnp_service_action_set (action, "GetSimulatedRuleData", G_TYPE_STRING, "-1|8|0|uuid:Insight-1_0-231624K120011C", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void NotifyManualToggle_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("NotifyManualToggle_cb received");
+gupnp_service_action_set (action, "NotifyManualToggle", G_TYPE_STRING, "0", NULL);
+    gupnp_service_action_return (action);
+}
+
+G_MODULE_EXPORT void ControlCloudUpload_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data) {
+    printf("ControlCloudUpload_cb received");
+gupnp_service_action_get (action, "EnableUpload", G_TYPE_STRING, enableupload, NULL);
+    gupnp_service_action_return (action);
+}
+
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::SetBinaryState", G_CALLBACK(SetBinaryState_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::UpdateInsightHomeSettings", G_CALLBACK(UpdateInsightHomeSettings_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::SetInsightHomeSettings", G_CALLBACK(SetInsightHomeSettings_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetInsightHomeSettings", G_CALLBACK(GetInsightHomeSettings_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::SetLogLevelOption", G_CALLBACK(SetLogLevelOption_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetFriendlyName", G_CALLBACK(GetFriendlyName_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::ReSetup", G_CALLBACK(ReSetup_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::SetHomeId", G_CALLBACK(SetHomeId_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetHomeId", G_CALLBACK(GetHomeId_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetHomeInfo", G_CALLBACK(GetHomeInfo_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::SetDeviceId", G_CALLBACK(SetDeviceId_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetDeviceId", G_CALLBACK(GetDeviceId_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetMacAddr", G_CALLBACK(GetMacAddr_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetSerialNo", G_CALLBACK(GetSerialNo_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetPluginUDN", G_CALLBACK(GetPluginUDN_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetSmartDevInfo", G_CALLBACK(GetSmartDevInfo_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::ShareHWInfo", G_CALLBACK(ShareHWInfo_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::ChangeFriendlyName", G_CALLBACK(ChangeFriendlyName_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::SetSmartDevInfo", G_CALLBACK(SetSmartDevInfo_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetRuleOverrideStatus", G_CALLBACK(GetRuleOverrideStatus_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetDeviceIcon", G_CALLBACK(GetDeviceIcon_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetIconURL", G_CALLBACK(GetIconURL_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetLogFileURL", G_CALLBACK(GetLogFileURL_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::ChangeDeviceIcon", G_CALLBACK(ChangeDeviceIcon_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetBinaryState", G_CALLBACK(GetBinaryState_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::SetMultiState", G_CALLBACK(SetMultiState_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::SetCrockpotState", G_CALLBACK(SetCrockpotState_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetCrockpotState", G_CALLBACK(GetCrockpotState_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetWatchdogFile", G_CALLBACK(GetWatchdogFile_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetSignalStrength", G_CALLBACK(GetSignalStrength_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::SetServerEnvironment", G_CALLBACK(SetServerEnvironment_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetServerEnvironment", G_CALLBACK(GetServerEnvironment_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetIconVersion", G_CALLBACK(GetIconVersion_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::GetSimulatedRuleData", G_CALLBACK(GetSimulatedRuleData_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::NotifyManualToggle", G_CALLBACK(NotifyManualToggle_cb), NULL);
+g_signal_connect(GUPNP_SERVICE(basiceventService), "action-invoked::ControlCloudUpload", G_CALLBACK(ControlCloudUpload_cb), NULL);
+char[100] homesettingsversion = "2";
+char[100] energyperunitcost = "111";
+char[100] currency = "1";
+char[100] binarystate = "8";
+char[100] duration = "0";
+char[100] endaction = "0";
+char[100] udn = "0";
+char[100] mode = "0";
+char[100] time = "0";
+char[100] level = "0";
+char[100] option = "0";
+char[100] reset = "0";
+char[100] friendlyname = "WeMo Insight";
+char[100] homeid = "7444278";
+char[100] deviceid = "5b9820b368ef79fd";
+char[100] smartdevinfo = "http://10.0.0.158:49154/smartDev.txt";
+char[100] macaddr = "149182B3A4D0";
+char[100] serialno = "231624K120011C";
+char[100] pluginudn = "uuid:Insight-1_0-231624K120011C";
+char[100] deviceicon = "0";
+char[100] statelist = "0";
+char[100] url = "http://10.0.0.158:49154/icon.jpg";
+char[100] ruleoverridestatus = "0";
+char[100] wdfile = "Sending";
+char[100] signalstrength = "68";
+char[100] serverenvironment = "";
+char[100] turnserverenvironment = "";
+char[100] serverenvironmenttype = "0";
+char[100] iconversion = "1";
+char[100] ruledata = "-1|8|0|uuid:Insight-1_0-231624K120011C";
+char[100] manualtoggle = "0";
+char[100] enableupload = "0";
+char[100] countdownendtime = "0";
+char[100] devicecurrenttime = "0";
+char[100] homeinfo = "0|7444278|g80ZUgABva3ZxTpthEQcHiDwPur5VyBGVQ+NZY/VoZs0pNrZ+EiSv4WpVJavAT2y
+iJorIj60M4iofpkCB7YzSg==
+|";
+char[100] logurl = "http://10.0.0.158:49154/PluginLogs.txt";

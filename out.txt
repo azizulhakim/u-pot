@@ -1,0 +1,2 @@
+('10.0.0.157', 3105) b'HTTP/1.1 200 OK\r\nCACHE-CONTROL: max-age=86400\r\nDATE: Fri, 23 Feb 2018 01:18:26 GMT\r\nEXT:\r\nLOCATION: http://10.0.0.157:49153/setup.xml\r\nOPT: "http://schemas.upnp.org/upnp/1/0/"; ns=01\r\n01-NLS: 22f0a7d0-1dd2-11b2-8027-bb21235c345a\r\nSERVER: Unspecified, UPnP/1.0, Unspecified\r\nX-User-Agent: redsonic\r\nST: upnp:rootdevice\r\nUSN: uuid:Insight-1_0-231624K120011C::upnp:rootdevice\r\n\r\n'
+

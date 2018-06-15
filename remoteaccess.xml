@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scpd xmlns="urn:Belkin:service-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  
+  <actionList>  
+    <action>
+      <name>RemoteAccess</name>
+      <argumentList>
+         <argument>
+           <retval/>
+           <name>DeviceId</name>
+           <relatedStateVariable>DeviceId</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+		  <argument>
+           <retval/>
+           <name>dst</name>
+           <relatedStateVariable>dst</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+	  <argument>
+           <retval/>
+           <name>HomeId</name>
+           <relatedStateVariable>HomeId</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+	  <argument>
+           <retval/>
+           <name>DeviceName</name>
+           <relatedStateVariable>DeviceName</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+	  <argument>
+           <retval/>
+           <name>MacAddr</name>
+           <relatedStateVariable>MacAddr</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+	<argument>
+		<retval/>
+		<name>pluginprivateKey</name>
+		<relatedStateVariable>pluginprivateKey</relatedStateVariable>
+		<direction>in</direction>
+	</argument>
+	<argument>
+		<retval/>
+		<name>smartprivateKey</name>
+		<relatedStateVariable>smartprivateKey</relatedStateVariable>
+		<direction>in</direction>
+	</argument>
+	<argument>
+	<retval/>
+	<name>smartUniqueId</name>
+	<relatedStateVariable>smartUniqueId</relatedStateVariable>
+	<direction>in</direction>
+	</argument>	 	  
+	<argument>
+	<retval/>
+	<name>numSmartDev</name>
+	<relatedStateVariable>numSmartDev</relatedStateVariable>
+	<direction>in</direction>
+	</argument>	 	  
+	<argument>
+	<retval/>
+	<name>ArpMac</name>
+	<relatedStateVariable>ArpMac</relatedStateVariable>
+	<direction>out</direction>
+	</argument>	 	  
+ </argumentList>
+ </action>
+	
+    
+</actionList>
+
+  <serviceStateTable>
+    
+        <stateVariable sendEvents="yes">
+        <!-- DEV ID -->
+      <name>homeId</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+	<stateVariable sendEvents="yes">
+      <name>"pluginprivateKey"</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>"smartprivateKey"</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+	<stateVariable sendEvents="yes">
+      <name>statusCode</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+	<stateVariable sendEvents="yes">
+      <name>resultCode</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+	<stateVariable sendEvents="yes">
+      <name>description</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+	<stateVariable sendEvents="yes">
+      <name>smartUniqueId</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+	<stateVariable sendEvents="yes">
+      <name>smartDeviceDescription</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+		<name>pluginprivateKey</name>
+		<dataType>string</dataType>
+		<defaultValue>0</defaultValue>
+	</stateVariable>
+	<stateVariable sendEvents="yes">
+		<name>smartprivateKey</name>
+		<dataType>string</dataType>
+		<defaultValue>0</defaultValue>
+	</stateVariable>
+	<stateVariable sendEvents="yes">
+		<name>numSmartDev</name>
+		<dataType>string</dataType>
+		<defaultValue>0</defaultValue>
+	</stateVariable>
+     <stateVariable sendEvents="yes">
+      <name>ArpMac</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+     </stateVariable>
+  </serviceStateTable>
+  
+  </scpd>

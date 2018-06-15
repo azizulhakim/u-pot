@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scpd xmlns="urn:Belkin:service-1-0">
+
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  
+  <actionList>
+    <action>
+        <name>PairAndRegister</name>    
+	<argumentList>
+	<argument>
+		<retval/>
+	    	<name>PairingData</name>
+            	<relatedStateVariable>PairingData</relatedStateVariable>
+	    	<direction>in</direction>
+	</argument>
+	<argument>
+		<retval/>
+		<name>RegistrationData</name>
+		<relatedStateVariable>RegistrationData</relatedStateVariable>
+		<direction>in</direction>
+	</argument>
+	<argument>
+		<retval/>
+		<name>PairingStatus</name>
+		<relatedStateVariable>PairingStatus</relatedStateVariable>
+		<direction>out</direction>
+	</argument>
+	</argumentList>
+    </action>
+    
+    <action>
+	<name>GetRegistrationData</name>    
+	<argumentList>
+	<argument>
+           	<retval/>
+           	<name>SmartDeviceData</name>
+           	<relatedStateVariable>SmartDeviceData</relatedStateVariable>
+           	<direction>in</direction>
+	</argument>         
+        <argument>
+		<retval/>
+        	<name>RegistrationData</name>
+         	<relatedStateVariable>RegistrationData</relatedStateVariable>
+         	<direction>out</direction>
+        </argument>
+       	</argumentList>       
+    </action>
+    
+    <action>
+	<name>GetRegistrationStatus</name>    
+	<argumentList>
+	<argument>
+           	<retval/>
+           	<name>RegistrationStatus</name>
+           	<relatedStateVariable>RegistrationStatus</relatedStateVariable>
+           	<direction>out</direction>
+	</argument>         
+	<argument>
+           	<retval/>
+           	<name>StatusCode</name>
+           	<relatedStateVariable>StatusCode</relatedStateVariable>
+           	<direction>out</direction>
+	</argument>         
+	</argumentList>       
+    </action>
+
+  </actionList>
+
+  <serviceStateTable>
+    <stateVariable sendEvents="yes">	
+	<name>PairingStatus</name>
+      	<dataType>string</dataType>
+      	<defaultValue>0</defaultValue>
+    </stateVariable>
+
+    <stateVariable sendEvents="yes">
+      	<name>RegistrationData</name>
+      	<dataType>string</dataType>
+      	<defaultValue>0</defaultValue>
+    </stateVariable>
+
+    <stateVariable sendEvents="yes">
+      	<name>StatusCode</name>
+      	<dataType>string</dataType>
+      	<defaultValue>0</defaultValue>
+    </stateVariable>
+
+    <stateVariable sendEvents="yes">
+      	<name>RegistrationStatus</name>
+      	<dataType>string</dataType>
+      	<defaultValue>0</defaultValue>
+    </stateVariable>
+  </serviceStateTable>
+
+  </scpd>

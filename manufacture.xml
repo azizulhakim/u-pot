@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scpd xmlns="urn:Belkin:service-1-0">
+
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+
+  <actionList>
+    <action>
+      <name>GetManufactureData</name>
+      <argumentList>
+        <argument>
+          <name>ManufactureData</name>
+          <direction>out</direction>
+          <relatedStateVariable>ManufactureData</relatedStateVariable>
+        </argument>
+      </argumentList>
+    </action>
+  </actionList>
+
+  <serviceStateTable>
+    <stateVariable sendEvent="no">
+      <name>ManufactureData</name>
+      <dataType>string</dataType>
+    </stateVariable>
+  </serviceStateTable>
+
+</scpd>

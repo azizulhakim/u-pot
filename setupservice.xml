@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scpd xmlns="urn:Belkin:service-1-0">
+
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  
+<actionList>
+    <action>
+        <name>GetApList</name>
+        <argumentList>
+         <argument>
+         <retval/>
+         <name>ApList</name>
+         <relatedStateVariable>ApList</relatedStateVariable>
+         <direction>out</direction>
+         </argument>
+         </argumentList>
+    </action>
+    
+    <action>
+        <name>GetNetworkList</name>
+        <argumentList>
+         <argument>
+         <retval/>
+         <name>NetworkList</name>
+         <relatedStateVariable>NetworkList</relatedStateVariable>
+         <direction>out</direction>
+         </argument>
+         </argumentList>
+    </action>
+    
+    <action>
+      <name>ConnectHomeNetwork</name>    
+      <argumentList>
+
+         <argument>
+           <retval/>
+           <name>ssid</name>
+           <relatedStateVariable>ssid</relatedStateVariable>
+           <direction>in</direction>
+          </argument>
+          
+          <argument>
+         <retval/>
+        <name>auth</name>
+        <relatedStateVariable>auth</relatedStateVariable>
+        <direction>in</direction>
+        </argument>
+
+       <argument>
+             <retval/>
+             <name>password</name>
+             <relatedStateVariable>password</relatedStateVariable>
+             <direction>in</direction>
+       </argument>
+
+       <argument>
+             <retval/>
+             <name>encrypt</name>
+             <relatedStateVariable>encrypt</relatedStateVariable>
+             <direction>in</direction>
+       </argument>
+
+       <argument>
+             <retval/>
+             <name>channel</name>
+             <relatedStateVariable>channel</relatedStateVariable>
+             <direction>in</direction>
+       </argument>
+       
+      </argumentList>
+          
+    </action>
+    
+        <action>
+          <name>GetNetworkStatus</name>    
+          <argumentList>
+             <argument>
+               <retval/>
+               <name>NetworkStatus</name>
+               <relatedStateVariable>NetworkStatus</relatedStateVariable>
+               <direction>out</direction>
+              </argument>
+          </argumentList>
+    </action>
+
+    <action>
+          <name>CloseSetup</name>    
+          <argumentList>
+          </argumentList>
+    </action>
+	
+	<action>
+          <name>StopPair</name>    
+          <argumentList>
+          </argumentList>
+    </action>
+    
+</actionList>
+
+  <serviceStateTable>
+  
+  <!-- connected, connecting, disconnected, time out error -->
+  <stateVariable sendEvents="yes">
+      <name>NetworkStatus</name>
+      <dataType>string</dataType>
+      <defaultValue>Disconnected</defaultValue>
+    </stateVariable>
+  <stateVariable sendEvents="yes">	
+	<name>PairingStatus</name>
+      <dataType>string</dataType>
+      <defaultValue>Connecting</defaultValue>
+    </stateVariable>
+    
+    <stateVariable sendEvents="yes">
+      <name>ApList</name>
+      <dataType>string</dataType>
+      <defaultValue/>
+    </stateVariable>
+	
+    <stateVariable sendEvents="yes">
+      <name>NetworkList</name>
+      <dataType>string</dataType>
+      <defaultValue/>
+    </stateVariable>
+	
+  </serviceStateTable>
+  
+  </scpd>

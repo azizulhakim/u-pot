@@ -76,7 +76,10 @@ class Device(object):
                 name = action.name
                 out = 'G_MODULE_EXPORT void {}_cb(GUPnPService *service, GUPnPServiceAction *action, G_GNUC_UNUSED gpointer user_data);'
                 print(out.format(name))
-        print('-------------------------------------------------------------------------------------------')
+
+
+        print("")
+        print(' // ---------------------------------------- Callback Functions ---------------------------------------------------')
 
         for service in self.serviceList:
             for action in service.actions:
@@ -165,7 +168,8 @@ class Device(object):
             out = '  {}Service = gupnp_device_info_get_service(GUPNP_DEVICE_INFO (upnpDevice), "{}");'
             print(out.format(service.name, service.serviceType))
 
-        print('  -------------------------------------------------------------------------------------')
+        print("")
+        print(' // ------------------------------ Enable Services -------------------------------------------------------')
 
         for service in self.serviceList:
             for action in service.actions:

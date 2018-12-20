@@ -3,6 +3,7 @@ from action import Action
 import xml.etree.ElementTree as ET
 import requests
 
+
 class Service(object):
     def __init__(self, host, service):
         self.host = host

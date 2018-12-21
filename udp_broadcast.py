@@ -14,7 +14,7 @@ MESSAGE = "Hello, World!"
 sock = socket(AF_INET, # Internet
                      SOCK_DGRAM) # UDP
 
-sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)					 
+sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 sock.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
 sock.sendto(MESSAGE.encode(), (UDP_IP, UDP_PORT))
 

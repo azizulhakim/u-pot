@@ -3,7 +3,7 @@ from action import Action
 import xml.etree.ElementTree as ET
 import requests
 
-
+# Represents the Service of an UPnP-based IoT Device
 class Service(object):
     def __init__(self, host, service):
         self.host = host

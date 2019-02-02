@@ -1,3 +1,4 @@
+# Represent the action that can be invoked on an UPnP-based IoT device
 class Action(object):
     def __init__(self, actionroot):
         self.name = actionroot.find('./name').text

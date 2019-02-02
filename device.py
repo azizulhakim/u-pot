@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import urllib.request
 import requests
 
+# Represent the virtual device of an UPnP-based IoT device
 class Device(object):
     def __init__(self, host, path):
         self.host = host
